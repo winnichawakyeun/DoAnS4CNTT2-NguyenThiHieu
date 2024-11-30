@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Sử Dụng Xe Bus - Trường Sonadezi</title>
+    <link rel="stylesheet" href="wed.css">
+</head>
+<body>
+    <header>
+        <header class="header">
+
+
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+                <span>Thành viên của IGC</span>
+            </div>
+            <div class="menu">
+                <a href="#">Trang sinh viên</a>
+                <img src="flagvn.jpg" alt="Vietnam Flag">
+            </div>
+    
+        </header>
+        <h1>Trường Cao Đẳng Công Nghệ & Quản Trị Sonadezi</h1>
+        <h2>Dịch Vụ Xe Bus</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#registration">Đăng Ký</a></li>
+            <li><a href="#schedule">Lịch Trình</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h3>Giới Thiệu</h3>
+        <p>Dịch vụ xe bus của trường Sonadezi nhằm phục vụ nhu cầu đi lại của sinh viên, giảng viên và nhân viên.</p>
+    </section>
+
+    <section id="registration">
+        <h3>Đăng Ký Sử Dụng Xe Bus<b style="color: red;">*</b></h3>
+        <form action="/submit-registration" method="POST">
+            <label for="name">Họ Tên:<b style="color: red;">*</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:<b style="color: red;">*</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Số Điện Thoại:<b style="color: red;">*</b></label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="route">Lịch Trình Mong Muốn:<b style="color: red;">*</b></label>
+            <select id="route" name="route">
+                <option value="route1">Lịch Trình 1</option>
+                <option value="route2">Lịch Trình 2</option>
+                <option value="route3">Lịch Trình 3</option>
+            </select>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </section>
+
+    <section id="schedule">
+        <h3>Lịch Trình Xe Bus</h3>
+            <label>Thời gian:</label>
+            <input type="radio" name="time" value="morning"> Buổi sáng
+            <input type="radio" name="time" value="afternoon"> Buổi chiều
+            <input type="radio" name="time" value="both"> Hai buổi<br>
+            <label for="pickupLocation">Điểm đón/trả học sinh <b style="color: red;">*</b></label>
+            <input type="text" id="pickupLocation" name="pickupLocation">
+        <p>Thông tin về lịch trình xe bus sẽ được cập nhật thường xuyên.</p>
+    </section>
+
+    <section id="Footer">     
+        <div class="ft">
+                <h3>TRƯỜNG CAO ĐẲNG CÔNG NGHỆ VÀ QUẢN TRỊ SONADEZI </h3>
+                <p><strong>Địa chỉ:</strong> Số 01, Đường 6A, KCN Biên Hòa II, Đồng Nai.</p>
+                <p><strong>Điện thoại:</strong> 0251.3994.011/012/013</p>
+                <p><strong>Email:</strong> info@sonadezi.edu.vn</p>
+                <p><a href="#">Chính sách bảo mật thông tin</a></p>
+                <p><a href="#">© 2024 Tạo bởi Nguyễn Thị Hiếu </a></p>
+        </div> 
+    </section>
+
+</body>
+</html>
